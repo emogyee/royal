@@ -133,10 +133,16 @@ STATICFILES_DIRS = [
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STORAGES = {
+    # ADD THIS: Restores the missing default storage required for media/file uploads
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    # Keep your existing WhiteNoise configuration below it
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
 
 # FIX 2: Fixed ALLOWED_HOSTS with your active Render URL
 ALLOWED_HOSTS = [
