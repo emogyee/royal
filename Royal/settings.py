@@ -120,19 +120,35 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/6.1/howto/static-files/
+
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
-STATIC_ROOTS = BASE_DIR / 'staticfiles'
+
+# FIX 1: Removed the trailing 's' from STATIC_ROOTS
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STORAGES = {
-    # ...
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR /'media'
+
+# FIX 2: Fixed ALLOWED_HOSTS with your active Render URL
+ALLOWED_HOSTS = [
+    'royal-sk1a.onrender.com',  # Swapped from 'royal-we6z' to your live active URL
+    'localhost',
+    '127.0.0.1',
+]
+
+# FIX 3: Removed leading slash from media URL to match Django standards
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
