@@ -117,23 +117,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-4 py-lg-0">
           <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="#about" class="nav-item nav-link">About</a>
           <a href="service.html" class="nav-item nav-link">Service</a>
           <a href="project.html" class="nav-item nav-link">Project</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Pages</a
-            >
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="feature.html" class="dropdown-item">Feature</a>
-              <a href="quote.html" class="dropdown-item">Free Quote</a>
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
-            </div>
+         
           </div>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
@@ -358,14 +345,14 @@
     <!-- Facts Start -->
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id='about'>
       <div class="container about px-lg-0">
         <div class="row g-0 mx-lg-0">
           <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
             <div class="position-relative h-100">
               <img
                 class="position-absolute img-fluid w-100 h-100"
-                src="{% static 'img/about.jpg' %}"
+                src="{% static '../static/img/95848.jpg' %}"
                 style="object-fit: cover"
                 alt=""
               />
@@ -380,7 +367,7 @@
                 class="bg-primary mb-3"
                 style="width: 60px; height: 2px"
               ></div>
-              <h1 class="display-5 mb-4">About Us</h1>
+              <h1 class="display-5 mb-4" >About Us</h1>
               <p class="mb-4 pb-2">
                 Royal Securities is a professional security company focused on
                 providing dependable protection solutions for businesses,
@@ -654,7 +641,7 @@
             <div class="position-relative h-100">
               <img
                 class="position-absolute img-fluid w-100 h-100"
-                src="{% static 'img/feature.jpg' %}"
+                src="{% static 'img/89084.jpg' %}"
                 style="object-fit: cover"
                 alt=""
               />
@@ -665,261 +652,180 @@
     </div>
     <!-- Feature End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
+    <!-- Security On Duty Start -->
+<div class="container-xxl py-5" id="security-duty">
+    <div class="container">
+
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <div
-            class="bg-primary mb-3 mx-auto"
-            style="width: 60px; height: 2px"
-          ></div>
-          <h1 class="display-5 mb-5">HOW WE WORK</h1>
+            <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+            <h1 class="display-5 mb-5">Royal Security on Duty</h1>
         </div>
-        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-12 text-center">
-            <ul class="list-inline mb-5" id="portfolio-flters">
-              <li class="mx-2 active" data-filter="*">All</li>
-              <li class="mx-2" data-filter=".first">Complete Projects</li>
-              <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-            </ul>
-          </div>
+
+        <div class="row g-4">
+
+            <!-- Security Personnel 1 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/85132.jpg' %}"
+                         alt="Royal Security personnel on duty">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Professional Protection</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/85132.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Personnel 2 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/Security Training.jpg' %}"
+                         alt="Royal Security guard on duty">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Professional Protection</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/Security Training.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Personnel 3 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/NYC Private Security Specialists _ Advanced Executive Protection & Personal Bodyguard Services in Ne.jpg' %}"
+                         alt="Royal Security personnel providing protection">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Reliable Security</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/NYC Private Security Specialists _ Advanced Executive Protection & Personal Bodyguard Services in Ne.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Personnel 4 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/bibb.jpg' %}"
+                         alt="Royal Security officer on duty">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Vigilant Protection</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/bibb.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Personnel 5 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/sec.jpg' %}"
+                         alt="Royal Security personnel at post">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Security at Your Service</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/sec.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Personnel 6 -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="portfolio-inner">
+                    <img class="img-fluid w-100"
+                         src="{% static 'img/89084.jpg' %}"
+                         alt="Royal Security officer providing protection">
+
+                    <div class="text-center p-3">
+                        <p class="text-primary mb-0">Security on Duty</p>
+                    </div>
+
+                    <div class="portfolio-text text-center bg-white p-3">
+                        <p class="text-primary mb-2">Royal Security</p>
+                        <h5 class="lh-base mb-3">Your Security. Our Priority.</h5>
+
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-primary rounded-circle mx-1"
+                               href="{% static 'img/89084.jpg' %}"
+                               data-lightbox="security-duty">
+                                <i class="fa fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="row g-4 portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-1.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">UNDERSTAND</p>
-                <h5 class="lh-base mb-0">
-                  We begin by understanding your environment, operations and
-                  security concerns.
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">ASSESS</p>
-                <h5 class="lh-base mb-3">
-                  We identify potential vulnerabilities and security risks that
-                  may affect your people, property or operations.
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-1.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-2.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">PLAN</p>
-                <h5 class="lh-base mb-0">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Fire Detection</p>
-                <h5 class="lh-base mb-3">
-                  We develop a security approach tailored to your specific
-                  requirements.
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-2.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-3.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">DEPLOY</p>
-                <h5 class="lh-base mb-0">
-                  Appropriate security personnel, procedures and solutions are
-                  put in place.
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">MONITOR</p>
-                <h5 class="lh-base mb-3">
-                  Security operations are monitored and reviewed to maintain
-                  effectiveness and accountability.
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-3.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-4.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">IMPROVE</p>
-                <h5 class="lh-base mb-0">
-                  As your organisation and security environment change, we adapt
-                  the security strategy accordingly.
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Alarm Systems</p>
-                <h5 class="lh-base mb-3">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-4.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-5.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">CCTV & Video</p>
-                <h5 class="lh-base mb-0">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">CCTV & Video</p>
-                <h5 class="lh-base mb-3">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-5.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner">
-              <img
-                class="img-fluid w-100"
-                src="{% static 'img/portfolio-6.jpg' %}"
-                alt=""
-              />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Smart Home</p>
-                <h5 class="lh-base mb-0">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Smart Home</p>
-                <h5 class="lh-base mb-3">
-                  Smart CCTV Security Systems That Fits Your Business
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/portfolio-6.jpg"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- Projects End -->
+</div>
+<!-- Security On Duty End -->
 
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id='contact'>
       <div class="container quote px-lg-0">
         <div class="row g-0 mx-lg-0">
           <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
@@ -946,19 +852,31 @@
                 Tell us about your security requirements and our team will be
                 available to discuss a solution that works for you.
               </p>
-              <form>
+              <form method="POST" action='{% url "index" %}'>
+                {% csrf_token %}
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
+                      name="full_name"
                       class="form-control border-0"
-                      placeholder="Your Name"
+                      placeholder="Full Name"
+                      style="height: 55px"
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      name="organization_name"
+                      class="form-control border-0"
+                      placeholder="Organization Name"
                       style="height: 55px"
                     />
                   </div>
                   <div class="col-12 col-sm-6">
                     <input
                       type="email"
+                      name="email"
                       class="form-control border-0"
                       placeholder="Your Email"
                       style="height: 55px"
@@ -967,28 +885,35 @@
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
+                      name="phone"
                       class="form-control border-0"
-                      placeholder="Your Mobile"
+                      placeholder="Your phone"
                       style="height: 55px"
                     />
                   </div>
-                  <div class="col-12 col-sm-6">
-                    <select class="form-select border-0" style="height: 55px">
-                      <option selected>Select A Service</option>
-                      <option value="1">Service 1</option>
-                      <option value="2">Service 2</option>
-                      <option value="3">Service 3</option>
+                  <div class="col-12 ">
+                    <select class="form-select border-0" name="service" style="height: 55px">
+                      <option selected>Security Service Required</option>
+                      <option value="Manned Security">Manned Security</option>
+                      <option value="Corporate Security">Corporate Security</option>
+                      <option value="Residential Security">Residential Security</option>
+                      <option value="Event Security">Event Security</option>
+                      <option value="Access Control">Access Control</option>
+                      <option value="Surveillance">Surveillance</option>
+                      <option value="Security Consulting">Security Consulting</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
                   <div class="col-12">
                     <textarea
                       class="form-control border-0"
-                      placeholder="Special Note"
+                      name="message"
+                      placeholder="Message"
                     ></textarea>
                   </div>
                   <div class="col-12">
                     <button class="btn btn-primary w-100 py-3" type="submit">
-                      Get A Free Quote
+                      Request A Consultation
                     </button>
                   </div>
                 </div>
@@ -1011,110 +936,44 @@
           <h1 class="display-5 mb-5">Team Members</h1>
         </div>
         <div class="row g-4">
+          
+          {% for member in team_members  %}
+            
+          
+            
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="team-item">
               <div class="overflow-hidden position-relative">
                 <img
                   class="img-fluid"
-                  src="{% static 'img/team-1.jpg' %}"
+                  src="{{ member.image.url }}"
                   alt=""
                 />
                 <div class="team-social">
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
+                  <a class="btn btn-square btn-dark rounded-circle m-1" href="{{ member.facebook_url }}"
                     ><i class="fab fa-facebook-f"></i
                   ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
+                  <a class="btn btn-square btn-dark rounded-circle m-1" href="{{ member.x_url }}"
                     ><i class="fab fa-twitter"></i
                   ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
+                  <a class="btn btn-square btn-dark rounded-circle m-1" href="{{ member.instagram_url }}"
                     ><i class="fab fa-instagram"></i
                   ></a>
                 </div>
               </div>
               <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <span class="text-primary">Designation</span>
+                <h5 class="mb-0">{{ member.name }}</h5>
+                <span class="text-primary">{{ member.designation }}</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  class="img-fluid"
-                  src="{% static 'img/team-2.jpg' %}"
-                  alt=""
-                />
-                <div class="team-social">
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <span class="text-primary">Designation</span>
-              </div>
-            </div>
+          
+          {% empty %}
+          <div class='col-12 text-center'>
+            <p>No team member found.</p>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  class="img-fluid"
-                  src="{% static 'img/team-3.jpg' %}"
-                  alt=""
-                />
-                <div class="team-social">
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <span class="text-primary">Designation</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item">
-              <div class="overflow-hidden position-relative">
-                <img
-                  class="img-fluid"
-                  src="{% static 'img/team-4.jpg' %}"
-                  alt=""
-                />
-                <div class="team-social">
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-dark rounded-circle m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="text-center p-4">
-                <h5 class="mb-0">Full Name</h5>
-                <span class="text-primary">Designation</span>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+     
         </div>
       </div>
     </div>
@@ -1134,42 +993,25 @@
           class="owl-carousel testimonial-carousel wow fadeInUp"
           data-wow-delay="0.1s"
         >
+
+        
+        {% for item in testimonial  %}
+    
           <div
             class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>"
+            data-dot="<img class='img-fluid' src={{ item.image.url }} alt=''>"
           >
             <p class="fs-5">
-              Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
-              duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
-              erat magna elitr erat sit sit erat at rebum justo sea clita.
+              {{ item.feedback }}
             </p>
-            <h4>Client Name</h4>
-            <span class="text-primary">Profession</span>
+            <h4>{{ item.client_name }}</h4>
+            <span class="text-primary">{{ item.profession }}</span>
           </div>
-          <div
-            class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>"
-          >
-            <p class="fs-5">
-              Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
-              duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
-              erat magna elitr erat sit sit erat at rebum justo sea clita.
-            </p>
-            <h4>Client Name</h4>
-            <span class="text-primary">Profession</span>
+          {% empty%}
+          <div class=col-12 text-center>
+            <p>No testimonial available at the moment.</p>
           </div>
-          <div
-            class="testimonial-item text-center"
-            data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>"
-          >
-            <p class="fs-5">
-              Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo
-              duo labore sed sed. Magna ut diam sit et amet stet eos sed clita
-              erat magna elitr erat sit sit erat at rebum justo sea clita.
-            </p>
-            <h4>Client Name</h4>
-            <span class="text-primary">Profession</span>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -1230,8 +1072,8 @@
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
             <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            
+           
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Newsletter</h5>
